@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>エラー - 管理画面</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <div class="layout">
+        <!-- ========== ヘッダー ========== -->
+        <header class="header">
+            <div class="logo">Admin Panel</div>
+            <nav class="global-nav">
+                <ul>
+                    <li><a href="index.html">トップ</a></li>
+                    <li><a href="list.html">一覧</a></li>
+                    <li><a href="form.html">登録</a></li>
+                </ul>
+            </nav>
+            <div class="user-info">
+                <span><i class="fas fa-user"></i> 山田 太郎</span>
+                <a href="login.html" class="btn-logout">ログアウト</a>
+            </div>
+        </header>
+
+        <!-- ========== サイドバー ========== -->
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <i class="fas fa-home"></i> ダッシュボード
+                        </a>
+                    </li>
+                    <li>
+                        <a href="list.html">
+                            <i class="fas fa-list"></i> データ一覧
+                        </a>
+                    </li>
+                    <li>
+                        <a href="form.html">
+                            <i class="fas fa-plus-circle"></i> 新規登録
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-cog"></i> 設定
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- ========== メインコンテンツ ========== -->
+        <main class="main-content">
+            <div class="error-page">
+                <div class="error-icon">
+                    <i class="fas fa-exclamation-triangle"></i>
+                </div>
+                <h1 class="error-title">ページが見つかりません</h1>
+                <p class="error-text">
+                    お探しのページは存在しないか、移動した可能性があります。
+                </p>
+                <a href="index.html" class="btn btn--primary">
+                    <i class="fas fa-home"></i> トップページへ戻る
+                </a>
+            </div>
+        </main>
+
+        <!-- ========== フッター ========== -->
+        <footer class="footer">
+            <p>&copy; 2026 Admin System. All rights reserved. v1.0</p>
+        </footer>
+    </div>
+</body>
+</html>

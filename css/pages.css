@@ -1,0 +1,184 @@
+/* ==========================================
+ログイン画面専用スタイル
+========================================== */
+
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 20px;
+}
+
+.login-box {
+    background: var(--bg-white);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-logo i {
+    font-size: 3rem;
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.login-logo h1 {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin-top: 10px;
+}
+.login-form .form-group {
+    margin-bottom: 20px;
+}
+
+.login-form .form-input {
+    width: 100%;
+}
+
+.btn--full {
+    width: 100%;
+    justify-content: center;
+    padding: 12px 20px;
+    font-size: 1rem;
+}
+
+.error-message {
+    display: none;  /* 通常は非表示 */
+    background: rgba(220, 53, 69, 0.1);
+    color: var(--danger);
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-size: 0.875rem;
+}
+
+.error-message.show {
+    display: block;  /* エラー時に表示 */
+}
+
+.error-message i {
+    margin-right: 8px;
+}
+
+.login-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-links a {
+    color: var(--text-muted);
+    font-size: 0.875rem;
+}
+
+.login-links a:hover {
+    color: var(--primary);
+}
+
+/* ==========================================
+詳細画面
+========================================== */
+.detail-card {
+    background: var(--bg-white);
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: var(--shadow);
+    margin-bottom: 20px;
+}
+
+.detail-list {
+    display: grid;
+    gap: 0;
+}
+
+.detail-item {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    border-bottom: 1px solid var(--border-color);
+    padding: 15px 0;
+}
+
+.detail-item:last-child {
+    border-bottom: none;
+}
+
+.detail-item dt {
+    font-weight: 600;
+    color: var(--text-muted);
+}
+
+.detail-item dd {
+    margin: 0;
+}
+
+/* ==========================================
+登録/編集フォーム
+========================================== */
+.form-card {
+    background: var(--bg-white);
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: var(--shadow);
+}
+
+.form-textarea {
+    width: 100%;
+    resize: vertical;
+}
+
+.radio-group,
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.radio-label,
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+/* ==========================================
+エラーページ
+========================================== */
+.error-page {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.error-icon {
+    font-size: 5rem;
+    color: var(--warning);
+    margin-bottom: 20px;
+}
+
+.error-title {
+    font-size: 1.75rem;
+    margin-bottom: 15px;
+}
+
+.error-text {
+    color: var(--text-muted);
+    margin-bottom: 30px;
+}
+
+.required {
+    color: var(--danger);
+}

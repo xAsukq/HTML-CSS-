@@ -1,0 +1,26 @@
+/* タブレット */
+@media (max-width: 1023px) {
+    :root { --sidebar-width: 200px; }
+}
+
+/* スマートフォン */
+@media (max-width: 767px) {
+    .layout {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
+    }
+    .sidebar { display: none; }
+    .main-content { padding: 15px; }
+    .card-grid { grid-template-columns: 1fr; }
+    .table-container { overflow-x: auto; }
+    .global-nav { display: none; }  /* ← . が抜けていた */
+    .search-form { flex-direction: column; }
+    .search-form .form-input,       /* ← . が抜けていた */
+    .search-form .form-select { width: 100%; }  /* ← . が抜けていた */
+
+    /* ログイン画面 */
+    .login-box { padding: 30px 20px; }
+}

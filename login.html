@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ログイン - 管理画面</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- CSS Files（layout.css は不要） -->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- ログイン専用コンテナ -->
+    <div class="login-container">
+        <div class="login-box">
+
+            <!-- ロゴ -->
+            <div class="login-logo">
+                <i class="fas fa-shield-halved"></i>
+                <h1>Admin Panel</h1>
+            </div>
+
+            <!-- ログインフォーム -->
+            <form class="login-form">
+
+                <!-- メールアドレス -->
+                <div class="form-group">
+                    <label for="email" class="form-label">
+                        メールアドレス <span class="required">*</span>
+                    </label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        class="form-input" 
+                        placeholder="example@email.com"
+                        required
+                    >
+                </div>
+
+                <!-- パスワード -->
+                <div class="form-group">
+                    <label for="password" class="form-label">
+                        パスワード <span class="required">*</span>
+                    </label>
+                    <input 
+                        type="password" 
+                        id="password" 
+                        class="form-input" 
+                        placeholder="パスワードを入力"
+                        required
+                    >
+                </div>
+
+                <!-- エラーメッセージ（通常は非表示） -->
+                <div class="error-message">
+                    <i class="fas fa-exclamation-circle"></i>
+                    メールアドレスまたはパスワードが正しくありません
+                </div>
+
+                <!-- ログインボタン -->
+                <button type="submit" class="btn btn--primary btn--full">
+                    <i class="fas fa-sign-in-alt"></i> ログイン
+                </button>
+
+            </form>
+
+            <!-- パスワード忘れリンク -->
+            <div class="login-links">
+                <a href="#">パスワードをお忘れですか？</a>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
